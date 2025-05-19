@@ -6,13 +6,14 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="https://unpkg.com/@@picocss/pico@@latest/css/pico.classless.min.css">
 </head>
 <body>
 <div>
     <h1>@ViewBag.Title</h1>
     <ul>
-            <li><a asp-controller="Employees" asp-action="Index"></a></li>
-            <li><a asp-controller="Employees" asp-action="Create"></a></li>
+            <li><a asp-controller="Employees" asp-action="Index">Index</a></li>
+            <li><a asp-controller="Employees" asp-action="Create">Create</a></li>
     </ul>
     @RenderBody()
     <footer>
