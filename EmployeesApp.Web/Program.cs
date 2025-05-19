@@ -8,6 +8,7 @@ namespace EmployeesApp.Web
             builder.Services.AddControllersWithViews();
             var app = builder.Build();
             app.MapControllers();
+            app.UseStaticFiles();
             app.Run();
         }
     }

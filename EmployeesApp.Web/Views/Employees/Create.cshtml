@@ -9,14 +9,16 @@
 
     <form asp-controller="Employees" asp-action="Create" style="width: 300px;">
         <label asp-for="Name"></label>
-        <input asp-for="Name"/>
+        <input asp-for="Name" required/>
         <span asp-validation-for="Name"></span>
 
         <label asp-for="Email"></label>
-        <input asp-for="Email" />
+        <input asp-for="Email" required/>
         <span asp-validation-for="Email"></span>
         <br />
         <input type="submit" value="Save" />
     </form>
     <div asp-validation-summary="All"></div>
+    <script src="" asp-fallback-src="/scripts/lib/jquery-validate/jquery.validate.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/mvc/5.2.3/jquery.validate.unobtrusive.min.js" asp-fallback-src="/scripts/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
 </div>
